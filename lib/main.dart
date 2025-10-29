@@ -10,53 +10,20 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.red,
-          title: Text("Demo App"),
+          backgroundColor: Colors.blue,
+          title: Text("Demo Prueba"),
         ),
-        backgroundColor: Colors.blue[500],
+        backgroundColor: Colors.teal[500],
         body: SafeArea(
           child: Column(
-            verticalDirection: VerticalDirection.up,
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
-              Container(
-//height: 300.0,
-//width: 300.0,
-//margin: EdgeInsets.fromLTRB(10, 20, 30, 40),
-//padding: EdgeInsets.all(50),
-                color: Colors.blue[100],
-
-                child: Text("Container 1"),
-              ),
-              SizedBox(
-                height: 20,
-              ),
-              Container(
-                color: Colors.red[100],
-                child: Text("Container 2"),
-              ),
-              Container(
-                color: Colors.green[100],
-                child: Text("Container 3"),
-              ),
-              Container(
-                height: 100.0,
-                width: 200.0,
-                //  margin: EdgeInsets.all(50.0),
-                padding: EdgeInsets.all(20.0),
-                color: Colors.purple[100],
-                child: Center(
-                  child: Text("Container 4"),
-                ),
-              ),
-              SizedBox(
-                height: 20,
-              ),
-              Container(
-                color: Colors.red[200],
-                //width: 10,
-                height: 300,
+              CircleAvatar(
+                radius: 50.0,
+                backgroundColor: Colors.red,
+                backgroundImage:
+                    // child: const Text('MS'),
+                    AssetImage('images/Roboute2.jpg'),
+                child: const Text('MS'),
               ),
             ],
           ),
